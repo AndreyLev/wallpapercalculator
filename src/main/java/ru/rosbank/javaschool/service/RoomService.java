@@ -27,6 +27,7 @@ public class RoomService {
 
             panelLength = room.getHeight() + mastersRecommendation;
             numberOfPanels = (int)Math.floor((double)(wallpaper.getLengthOfOneRoll()) / panelLength);
+            return numberOfPanels;
 
         }
 
@@ -34,6 +35,7 @@ public class RoomService {
 
             panelLength = room.getHeight() + mastersRecommendation + Wallpaper.directDocking;
             numberOfPanels = (int)Math.floor((double)(wallpaper.getLengthOfOneRoll()) / panelLength);
+            return numberOfPanels;
 
         }
 
@@ -43,6 +45,7 @@ public class RoomService {
             int stripOffset = Wallpaper.offsetDocking % separator;
             panelLength = room.getHeight() + mastersRecommendation + repeatPatternDistance + stripOffset;
             numberOfPanels = (int)Math.floor((double)(wallpaper.getLengthOfOneRoll()) / panelLength);
+            return numberOfPanels;
 
         }
 

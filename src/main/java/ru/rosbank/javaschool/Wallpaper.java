@@ -19,7 +19,7 @@ public class Wallpaper {
 
     public Wallpaper(double width, int docking)
     {
-        rapport = 0;
+        rapport = docking;
 
         if (docking == freeDocking) {
             rapport = freeDocking;

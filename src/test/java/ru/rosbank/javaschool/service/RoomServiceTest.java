@@ -56,4 +56,15 @@ class RoomServiceTest {
         assertEquals(8, result);
     }
 
+    @Test
+    public void countTheNumberPanelsFromOneRollWithWrongRapport() {
+        RoomService roomService = new RoomService();
+        Room room = new Room(5.05,6.29,2.75);
+        Wallpaper wallpaper = new Wallpaper(1.06, 300);
+
+        int result = roomService.countTheNumberPanelsFromOneRoll(room, wallpaper);
+
+        assertEquals(0, result);
+    }
+
 }
